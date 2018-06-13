@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Vibration
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="content">
+  <ion-card class="center-card">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6><button ion-button color="dark" full (click)="vibrate(1)">1 Second</button></ion-col>
+        <ion-col col-6><button ion-button color="dark" full (click)="vibrate(5)">5 Second</button></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-6><button ion-button color="dark" full (click)="vibratePattern()">Pattern</button></ion-col>
+        <ion-col col-6><button ion-button color="dark" full (click)="vibrateMusic()">Music</button></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-12><button ion-button color="danger" full (click)="stop()">Stop</button></ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+</ion-content>
